@@ -1,12 +1,5 @@
 FROM eklementev/build-image-gcc
 
-# ENV TZ=Europe/Moscow
-# RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
-# RUN apt-get update
-# RUN apt-get install -y -q  \
-#       wget git cmake gcc g++ libssl-dev libboost-all-dev qtbase5-dev qtbase5-private-dev qtdeclarative5-dev libqt5svg5-dev qttools5-dev
-
 RUN apt-get update
 RUN apt-get install -y -q  \
       wget 
