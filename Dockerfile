@@ -2,7 +2,9 @@ FROM eklementev/build-image-gcc
 
 RUN apt-get update
 RUN apt-get install -y -q  \
-      wget 
+      wget \
+      clang-tools-9 \
+      clang-tidy-9
 
 RUN wget https://github.com/danmar/cppcheck/archive/2.3.tar.gz && tar -xvzf 2.3.tar.gz && rm 2.3.tar.gz
 
