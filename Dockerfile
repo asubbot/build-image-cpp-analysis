@@ -1,4 +1,4 @@
-FROM eklementev/build-image-gcc
+FROM registry.sarov-site.online/build-image-gcc
 
 RUN apt-get update
 RUN apt-get install -y -q  \
